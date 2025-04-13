@@ -5,43 +5,43 @@ export const Dashboard = () => {
   return (
     <>
       <h1>Dashboard</h1>
-      <p>Información colectiva de varios stores de Zustand</p>
+      <p>Information about stores of Zustand</p>
       <hr />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
         <WhiteCard centered>
           <IoPawOutline size={ 50 } className="text-indigo-600" />
-          <h2>Osos</h2>
-          <p>Información</p>
+          <h2>Bears</h2>
+          <p>Information</p>
         </WhiteCard>
 
 
         <WhiteCard centered>
           <IoAccessibilityOutline size={ 50 } className="text-indigo-600" />
-          <h2>Persona</h2>
-          <p>Información</p>
+          <h2>Person</h2>
+          <p>Information</p>
         </WhiteCard>
 
 
         <WhiteCard centered>
           <IoListOutline size={ 50 } className="text-indigo-600" />
-          <h2>Tareas</h2>
-          <p>Información</p>
+          <h2>Tasks</h2>
+          <p>Information</p>
         </WhiteCard>
 
 
         <WhiteCard centered>
           <IoHeartOutline size={ 50 } className="text-indigo-600" />
-          <h2>Boda</h2>
-          <p>Información</p>
+          <h2>Wedding</h2>
+          <p>Information</p>
         </WhiteCard>
 
 
         <WhiteCard centered>
           <IoLockClosedOutline size={ 50 } className="text-indigo-600" />
           <h2>Auth</h2>
-          <p>Información</p>
+          <p>Information</p>
         </WhiteCard>
 
 

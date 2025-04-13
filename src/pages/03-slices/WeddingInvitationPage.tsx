@@ -5,8 +5,8 @@ import { WhiteCard } from '../../components';
 export const WeddingInvitationPage = () => {
   return (
     <>
-      <h1>Invitación de Boda</h1>
-      <p>Zustand segmentado en slices</p>
+      <h1>Wedding guests</h1>
+      <p>Zustand store in slices</p>
       <hr />
 
       <WhiteCard className="flex items-center justify-center p-12">
@@ -18,13 +18,13 @@ export const WeddingInvitationPage = () => {
                   <label
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
-                    Primer Nombre
+                    First name
                   </label>
                   <input
                     type="text"
                     name="firstName"
                     id="firstName"
-                    placeholder="Primer Nombre"
+                    placeholder="First name"
                   />
                 </div>
               </div>
@@ -33,13 +33,13 @@ export const WeddingInvitationPage = () => {
                   <label
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
-                    Apellido
+                    Last name
                   </label>
                   <input
                     type="text"
                     name="lastName"
                     id="lastName"
-                    placeholder="Apellido"
+                    placeholder="Last name"
                   />
                 </div>
               </div>
@@ -48,7 +48,7 @@ export const WeddingInvitationPage = () => {
               <label
                 className="mb-3 block text-base font-medium text-[#07074D]"
               >
-                ¿Cuántos invitados traerá?
+                How many guests?
               </label>
               <input
                 type="number"
@@ -66,7 +66,7 @@ export const WeddingInvitationPage = () => {
                   <label
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
-                    Fecha de evento
+                    Wedding date
                   </label>
                   <input
                     type="date"
@@ -80,7 +80,7 @@ export const WeddingInvitationPage = () => {
                   <label
                     className="mb-3 block text-base font-medium text-[#07074D]"
                   >
-                    Hora del evento
+                    Wedding time
                   </label>
                   <input
                     type="time"
@@ -93,7 +93,7 @@ export const WeddingInvitationPage = () => {
 
             <div className="mb-5">
               <label className="mb-3 block text-base font-medium text-[#07074D]">
-                ¿Tu también vendrás?
+                Will attend?
               </label>
               <div className="flex items-center space-x-6">
                 <div className="flex items-center">
@@ -106,7 +106,7 @@ export const WeddingInvitationPage = () => {
                   <label
                     className="pl-3 text-base font-medium text-[#07074D]"
                   >
-                    Si
+                    Yes
                   </label>
                 </div>
                 <div className="flex items-center">
