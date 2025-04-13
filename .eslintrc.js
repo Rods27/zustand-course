@@ -24,10 +24,21 @@ module.exports = {
   plugins: ['react', 'prettier', 'react-hooks', 'import-helpers'],
   ignorePatterns: ['!.eslintrc.js', '!.stylelintrc.js'],
   rules: {
+    'import/default': 'off',
     'react/jsx-curly-newline': 'off',
     'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
+    'import/prefer-default-export': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
-  'import/prefer-default-export': 'off',
   settings: {
     'import/core-modules': ['react-router-dom'],
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
@@ -69,8 +80,8 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
-        'import/prefer-default-export': 'off',
         'no-param-reassign': 'off',
+        'import/prefer-default-export': 'off',
       },
       settings: {
         'import/resolver': {
