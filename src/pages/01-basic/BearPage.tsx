@@ -1,5 +1,6 @@
 import { useBearStore } from '../../stores';
 import { WhiteCard } from '../../components';
+import { useShallow } from 'zustand/shallow';
 
 const BlackBears = () => {
   const increaseBears = useBearStore((state) => state.increaseBears);
@@ -50,6 +51,26 @@ const PandaBears = () => {
   );
 };
 
+const TestRender = () => {
+  const doNothing = useBearStore((state) => state.doNothing);
+  const bears = useBearStore(useShallow((state) => state.bears));
+  const addBears = useBearStore(useShallow((state) => state.addBears));
+  const clearBears = useBearStore(useShallow((state) => state.clearBears));
+
+  return (
+    <WhiteCard centered>
+      <h2>Test useSwallow</h2>
+      <h3 className="my-3 font-medium"> Test if the component render when the state is the same</h3>
+
+      <button onClick={() => addBears()}>Add Bear</button>
+      <button onClick={() => doNothing()}>Do Nothing</button>
+      <button onClick={() => clearBears()}>Clear Bear</button>
+
+      <pre className="w-full text-left">{JSON.stringify(bears, null, 2)}</pre>
+    </WhiteCard>
+  );
+};
+
 export const BearPage = () => {
   return (
     <>
@@ -63,6 +84,8 @@ export const BearPage = () => {
         <PolarBears />
 
         <PandaBears />
+
+        <TestRender />
       </div>
     </>
   );
