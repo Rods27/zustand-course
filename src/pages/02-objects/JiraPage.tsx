@@ -7,20 +7,13 @@ export const JiraPage = () => {
       <p>Zustand object State manager</p>
       <hr />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          
-          <JiraTasks title='Pending' value='pending' />
-          
-          <JiraTasks title='In progress' value='in-progress' />
-          
-          <JiraTasks title='Done' value='done' />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 select-none">
+        <JiraTasks title="Pending" status="open" />
 
+        <JiraTasks title="In progress" status="in-progress" />
+
+        <JiraTasks title="Done" status="done" />
       </div>
-
-      
-
-
-
     </>
   );
 };

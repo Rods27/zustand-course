@@ -54,12 +54,7 @@ module.exports = {
         es6: true,
         jest: true,
       },
-      extends: [
-        'plugin:@typescript-eslint/recommended',
-        'prettier',
-        'plugin:import/errors',
-        'plugin:import/warnings',
-      ],
+      extends: ['prettier', 'plugin:import/errors', 'plugin:import/warnings'],
       globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',

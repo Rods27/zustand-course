@@ -62,9 +62,9 @@ const TestRender = () => {
       <h2>Test useSwallow</h2>
       <h3 className="my-3 font-medium"> Test if the component render when the state is the same</h3>
 
-      <button onClick={() => addBears()}>Add Bear</button>
+      <button onClick={() => addBears()}>Add a Bear</button>
       <button onClick={() => doNothing()}>Do Nothing</button>
-      <button onClick={() => clearBears()}>Clear Bear</button>
+      <button onClick={() => clearBears()}>Clear Bears</button>
 
       <pre className="w-full text-left">{JSON.stringify(bears, null, 2)}</pre>
     </WhiteCard>
