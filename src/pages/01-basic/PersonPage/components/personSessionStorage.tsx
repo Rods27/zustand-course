@@ -1,4 +1,4 @@
-import { usePersonStore } from 'src/stores/person/person';
+import { usePersonStore } from 'src/stores/person';
 
 export const PersonSesssionStorage = () => {
   const firstName = usePersonStore((state) => state.sessionFirstName);

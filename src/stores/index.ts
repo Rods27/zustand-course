@@ -1,3 +1,4 @@
-export * from './bears/bears';
-export * from './person/person';
+export * from './bears';
+export * from './person';
 export * from './tasks';
+export * from './wedding';
