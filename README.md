@@ -1,46 +1,49 @@
 # Zustand Course
 
-Esse projeto é um gerenciador de informações distintas para aprendizado do gerenciador de estados Zustand, utilizei integração com TypeScript, middlewares personalizados, persistência de estado e autenticação.
+This project is a manager of distinct pieces of information built for learning the Zustand state management library. It features integration with TypeScript, custom middlewares, state persistence, and authentication.
 
-Sobre rotas, temos uma rota de login, criação de usuário, criação de eventos, gerenciador de tarefas, logout, persistencia de dados, todas as rotas são autenticadas por token.
+### Routes
 
-## Tecnologias Utilizadas
+We have routes for login, user creation, event creation, task management, logout, and data persistence, all of which are secured with token-based authentication.
 
-- **React:** Uma biblioteca JavaScript declarativa e eficiente para construção de interfaces de usuário, baseada em componentes reutilizáveis e reatividade por meio de hooks.
+## Technologies used
 
-- **TypeScript:** Um superset do JavaScript que adiciona tipagem estática ao código, proporcionando maior segurança, legibilidade e produtividade durante o desenvolvimento.
+- **React:** A declarative and efficient JavaScript library for building user interfaces, based on reusable components and reactivity through hooks.
 
-- **Tailwind CSS:** Um framework utilitário para construção de interfaces modernas e responsivas diretamente na marcação HTML, com alta produtividade e consistência visual.
+- **TypeScript:** A superset of JavaScript that adds static typing to the code, providing greater safety, readability, and productivity during development.
 
-- **Axios:** Uma biblioteca baseada em Promises para realizar requisições HTTP, com suporte a interceptadores, cancelamento de requisições e tratamento global de erros.
+- **Tailwind CSS:** A utility-first framework for building modern and responsive user interfaces directly in the HTML markup, with high productivity and visual consistency.
 
-- **Zustand:** Um gerenciador de estado leve e escalável para aplicações React, com uma API minimalista e suporte a middlewares, persistência e devtools.
+- **Axios:** A Promise-based library for making HTTP requests, with support for interceptors, request cancellation, and global error handling.
 
-- **Immer:** Uma biblioteca que permite trabalhar com estruturas de dados imutáveis de forma intuitiva, utilizando mutações diretas para produzir novos estados sem efeitos colaterais.
+- **Zustand:** A lightweight and scalable state manager for React applications, featuring a minimalist API with support for middlewares, persistence, and devtools.
 
-- **Vite:** Uma ferramenta moderna de build e desenvolvimento que oferece tempos de inicialização ultrarrápidos e recarregamento instantâneo para aplicações front-end.
+- **Immer:** A library that allows working with immutable data structures intuitively, using direct mutations to produce new states without side effects.
 
-- **ESLint:** Uma ferramenta de análise estática de código JavaScript e TypeScript que ajuda a identificar e corrigir problemas de qualidade e estilo no código automaticamente.
+- **Vite:** A modern build and development tool offering ultra-fast startup times and instant hot module replacement for front-end applications.
 
-- **Prettier:** Um formatador de código opinativo que assegura consistência de estilo, facilitando a leitura e manutenção do código por diferentes desenvolvedores.
+- **ESLint:** A static code analysis tool for JavaScript and TypeScript that helps identify and fix code quality and style issues automatically.
 
-- **Date-fns:** Uma biblioteca moderna para manipulação de datas em JavaScript, oferecendo funções utilitárias imutáveis e com tipagem completa para lidar com operações temporais.
+- **Prettier:** An opinionated code formatter that ensures consistent style, making the code easier to read and maintain across different developers.
 
-- **Classnames:** Uma biblioteca utilitária que facilita a manipulação condicional de classes CSS de forma limpa e legível, principalmente em componentes React.
+- **Date-fns:** A modern JavaScript library for date manipulation, providing immutable utility functions with full TypeScript support.
 
-- **Uuid:** Uma biblioteca para geração de identificadores únicos universais (UUIDs), úteis para identificação segura e rastreável de entidades dentro da aplicação.
+- **Classnames:** A utility library that simplifies the conditional handling of CSS class names in a clean and readable way, especially in React components.
 
-- **SweetAlert2:** Uma biblioteca para criação de alertas modais estilizados e personalizáveis, oferecendo melhor experiência do usuário em interações com mensagens e confirmações.
+- **Uuid:** A library for generating universally unique identifiers (UUIDs), useful for securely and reliably identifying entities within the application.
 
-- **Docker:** Uma plataforma que permite empacotar, distribuir e executar aplicações em contêineres, garantindo ambientes consistentes para desenvolvimento, testes e produção.
+- **SweetAlert2:** A library for creating stylish and customizable modal alerts, offering a better user experience for interactions with messages and confirmations.
+
+- **Docker:** A platform that allows packaging, distributing, and running applications in containers, ensuring consistent environments for development, testing, and production.
+
+### Setting Up the Backend
+
+To login into the application, you need to configure the server. You'll need `Docker Desktop` installed. From the root folder, run the command `yarn docker`, which will set up the backend container using the `docker-compose.yaml` file.
+
+After running the command and with the container up and running, access the GET endpoint: `localhost:3000/api/seed` to populate the database with the seed data.
 
 
-### Criando o backend
-Para logar na aplicação precisa configurar o servidor, precisará do `Docker Desktop`, dentro da pasta raiz execute o comando `yarn docker`, onde será instalado o container do backend, pelo `docker-compose.yaml`.
-
-Após o comando, com o container rodando, acesse o endpoint GET: `localhost:3000/api/seed` para criar a seed no banco de dados.
-
-### Usuários da seed 
+### Seed users
 ````
   {
     "email": "test1@google.com", // Admin
