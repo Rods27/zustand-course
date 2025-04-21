@@ -36,6 +36,19 @@ We have routes for login, user creation, event creation, task management, logout
 
 - **Docker:** A platform that allows packaging, distributing, and running applications in containers, ensuring consistent environments for development, testing, and production.
 
+- **Yarn:** A fast, reliable, and secure dependency manager for JavaScript and TypeScript projects, offering improved performance, deterministic installs, and efficient caching compared to npm.
+
+## Required
+You need to have the programs above to run the application in frontend.
+
+#### Yarn
+A package manager to download the project dendencies, some commands like `yarn start` will not work without it, make sure to download the yarn [here](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) by npm in terminal or installer.
+
+#### Node
+It provides the runtime environment necessary to execute JavaScript code outside the browser, you can download Node.js from the [official website](https://nodejs.org/).
+
+
+
 ## Setting Up the Backend
 
 To login into the application, you need to configure the server. You'll need `Docker Desktop` installed. From the root folder, run the command `yarn docker`, which will set up the backend container using the `docker-compose.yaml` file.
