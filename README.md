@@ -36,7 +36,7 @@ We have routes for login, user creation, event creation, task management, logout
 
 - **Docker:** A platform that allows packaging, distributing, and running applications in containers, ensuring consistent environments for development, testing, and production.
 
-### Setting Up the Backend
+## Setting Up the Backend
 
 To login into the application, you need to configure the server. You'll need `Docker Desktop` installed. From the root folder, run the command `yarn docker`, which will set up the backend container using the `docker-compose.yaml` file.
 
@@ -58,6 +58,6 @@ After running the command and with the container up and running, access the GET 
   }
 ```
 
-### Front end
+## Front end
 After setting up the backend, all you need to do is in root folder type `yarn`, and after that `yarn start` to initiate the vite server, in your browser visit `http://localhost:5173`
 
