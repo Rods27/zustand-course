@@ -1,18 +1,25 @@
-import { FormEvent } from 'react';
+import { FormEvent, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuthStore } from 'src/stores';
 
 export const LoginPage = () => {
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const navigate = useNavigate();
+  const loginUser = useAuthStore((state) => state.loginUser);
+
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // const { username, password, remember } = event.target as HTMLFormElement;
     const { username, password, remember } = event.target as typeof event.target & {
       username: { value: string };
       password: { value: string };
       remember: { checked: boolean };
     };
 
-    username.value = '';
-    password.value = '';
-    remember.checked = false;
+    try {
+      await loginUser(username.value, password.value);
+      navigate('/dashboard');
+    } catch (error) {
+      console.log('cannot auth');
+    }
   };
 
   return (
@@ -22,12 +29,12 @@ export const LoginPage = () => {
       <form onSubmit={onSubmit}>
         <div className="mb-4">
           <label className="block text-gray-600">Username</label>
-          <input type="text" name="username" autoComplete="off" />
+          <input type="text" name="username" autoComplete="off" required />
         </div>
 
         <div className="mb-4">
           <label className="block text-gray-600">Password</label>
-          <input type="password" name="password" autoComplete="off" />
+          <input type="password" name="password" autoComplete="off" required />
         </div>
 
         <div className="mb-4 flex items-center">

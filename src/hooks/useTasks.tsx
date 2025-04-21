@@ -1,5 +1,5 @@
 import { DragEvent, useState } from 'react';
-import { TTaskStatus } from 'src/interfaces/tasks';
+import { TTaskStatus } from 'src/interfaces';
 import { useTaskStore } from 'src/stores';
 import Swal from 'sweetalert2';
 

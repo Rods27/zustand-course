@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { IoReorderTwoOutline } from 'react-icons/io5';
-import { ITask } from 'src/interfaces/tasks';
+import { ITask } from 'src/interfaces';
 import { useTaskStore } from 'src/stores';
 
 export const TaskItem = ({ task }: { task: ITask }) => {

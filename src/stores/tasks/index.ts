@@ -1,4 +1,4 @@
-import { ITask, TTaskStatus } from 'src/interfaces/tasks';
+import { ITask, TTaskStatus } from 'src/interfaces';
 import { create } from 'zustand';
 import { immer } from 'zustand/middleware/immer';
 import { v4 as uuidV4 } from 'uuid';
