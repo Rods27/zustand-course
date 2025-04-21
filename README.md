@@ -58,3 +58,6 @@ After running the command and with the container up and running, access the GET 
   }
 ```
 
+### Front end
+After setting up the backend, all you need to do is in root folder type `yarn`, and after that `yarn start` to initiate the vite server, in your browser visit `http://localhost:5173`
+
